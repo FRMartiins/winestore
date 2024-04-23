@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.menu_bar {
+  background-color: #002642;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.logo {
+  color: #FFFFFF;
+  font-size: 30px;
+}
+
+.logo span {
+  color: #D00000;
+}
+
+.menu_bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu_bar ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+
+.menu_bar ul li a {
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.menu_bar ul li a:hover {
+  color: #D00000;
+}
+
+.dropdown_menu {
+  display: none;
+}
+
+.menu_bar ul li:hover .dropdown_menu {
+  color: #FFFFFF;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #002642;
+}
+
+.dropdown_menu ul {
+  font-size: 5px;
+  display: block;
+  margin: 10px;
+}
+
+.dropdown_menu ul li {
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .menu_bar {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    margin-top: 50px;
+  }
+}
+body {
+  font-family: "Sora", sans-serif;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+button {
+  font-family: "Sora", sans-serif;
+  cursor: pointer;
+}
+
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */
